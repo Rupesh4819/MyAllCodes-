@@ -1,0 +1,25 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int main() {
+	int t, n;
+	cin >> t;
+	while (t--)
+	{
+		cin >> n;
+		vector<int> A(n);
+		for (int x=0;x<n;x++)
+		{
+			cin >> A[x];
+		}
+		next_permutation(A.begin(), A.end());
+		for (int x : A)
+		{
+			cout << x<<" ";
+		}
+		cout << endl;
+
+	}
+
+}
